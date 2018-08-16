@@ -1,2 +1,3 @@
 class Dog < ApplicationRecord
-end
+  has_many :employees
+end # end of Dog class
