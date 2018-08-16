@@ -1,0 +1,21 @@
+<h1>Choose an employee:</h1>
+
+<% if @employee.errors.any? %>
+  <div id="error explanation">
+    <h2>
+      <%= pluralize(@employee.errors.count, "error") %>
+    </h2>
+
+    <ul>
+      <% @employee.errors.full_messages.each do |msg| %>
+      <li><%= msg %> </li>
+      <%end%>
+    </ul>
+  </div>
+<%end%>
+
+<ul>
+<%@employees.each do |employee|%>
+<li><%=link_to employee.to_s, employee_path(employee)%></li><br>
+<%end%>
+</ul>

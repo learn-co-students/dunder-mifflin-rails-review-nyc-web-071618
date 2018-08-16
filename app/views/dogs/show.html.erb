@@ -1,0 +1,14 @@
+<h3>Showing <%=@dog.name%>!</h3>
+
+<ul>
+  <li>Name: <%=@dog.name%></li>
+  <li>Breed: <%=@dog.breed%></li>
+  <li>Employees: </li><br>
+
+    <ul>
+      <%@dog.employees.each do |employee|%>
+      <li><%=link_to employee.to_s, employee_path(employee)%></li><br>
+      <%end%>
+    </ul>
+
+</ul>
