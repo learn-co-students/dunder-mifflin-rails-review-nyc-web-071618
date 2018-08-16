@@ -1,0 +1,10 @@
+<h1>This is <%= @dog.name %>'s page</h1>
+<h4>Breed: <%= @dog.breed %></h4>
+<br>
+<h4>Age? <%= @dog.age %></h4>
+<br>
+<%@dog.employees.each do |employee| %>
+<h4><%= link_to employee.full_name, employee %></h4>
+<% end %>
+
+<%= button_to "All Dogs", { :action => "index" }, :method => :get %>
