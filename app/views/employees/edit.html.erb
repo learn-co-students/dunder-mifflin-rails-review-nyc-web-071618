@@ -8,5 +8,8 @@
   Office: <%= f.text_field :office %><br>
   My picture: <%= f.text_field :img_url %><br>
   My doggo: <%= f.collection_select :dog_id, Dog.all, :id, :name %><br>
-  <%= f.submit %>
+  <%= f.submit %><br><br>
+
+  <%= button_to "Delete this MFer", @employee, :method => :delete, data: {confirm: "Peace out?"} %>
+
 <% end %>
