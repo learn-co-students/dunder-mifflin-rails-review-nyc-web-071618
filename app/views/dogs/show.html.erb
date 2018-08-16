@@ -1,0 +1,12 @@
+<h3>This is a dog's show page</h3>
+
+<p>My name is: <%= @dog.name %></p>
+<p>My breed is: <%= @dog.breed %></p>
+<p>My age is: <%= @dog.age %></p>
+
+<p>My humans are:</p>
+<ul>
+  <% @dog.employees.each do |employee| %>
+  <li><%= employee.first_name + " " + employee.last_name + " aka " + employee.alias %></li>
+  <% end %>
+</ul>
