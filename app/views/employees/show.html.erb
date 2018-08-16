@@ -1,0 +1,12 @@
+<h3>This is <%= @employee.first_name %>'s page!</h3>
+
+<%= image_tag(@employee.img_url) %>
+<p>My name is: <%= @employee.to_s %></p>
+<p><% if @employee.alias == "none" %>
+  <%= "No one cared enough to give me a nickname." %>
+  <% else %>
+  <%= "My nickname is: #{@employee.alias}" %>
+  <% end %></p>
+<p>My job title is: <%= @employee.title %></p>
+<p>I work at: <%= @employee.office %></p>
+<p>My favorite dog is : <%= link_to @employee.dog.name, @employee.dog %>
