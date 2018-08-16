@@ -1,0 +1,20 @@
+<h2><%= @dog.name %></h2>
+
+<ul>
+  <li><%= @dog.breed %></li>
+  <li><%= @dog.age %></li>
+</ul>
+
+<h4>My Subservients</h4>
+<ul>
+  <% @dog.employees.each do |employee| %>
+    <li>
+      <%= link_to employee.first_name, employee_path(employee) %>
+      <%= link_to employee.last_name, employee_path(employee) %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Create a Subservient", new_employee_path %>
+
+<p><%= link_to "Back to all dogs", dogs_path %></p>

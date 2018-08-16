@@ -1,0 +1,18 @@
+<%= image_tag(@employee.img_url, size: "300x200") %>
+
+<h2>
+  <%= @employee.first_name %>
+  <%= @employee.last_name %>
+</h2>
+
+<ul>
+  <li><%= @employee.alias %></li>
+  <li><%= @employee.title %></li>
+  <li><%= @employee.office %></li>
+  <li><%= link_to @dog.name, dog_path(@dog) %></li>
+</ul>
+
+
+<%= link_to "Back to all employees", employees_path %><br><br><br>
+
+<%= button_to("Remove Profile", employee_path(@employee), { method: :delete }) %>
