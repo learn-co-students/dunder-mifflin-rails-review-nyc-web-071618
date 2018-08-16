@@ -1,0 +1,10 @@
+<h1>Create new dog</h1>
+<ul>
+<% if @dog.errors.any? %>
+  <% @dog.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  <% end %>
+  </ul>
+  
+<%= render partial: "form" %>
