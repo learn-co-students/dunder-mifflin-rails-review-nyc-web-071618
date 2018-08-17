@@ -1,2 +1,3 @@
 class Employee < ApplicationRecord
-end
+  belongs_to :dog
+end 
