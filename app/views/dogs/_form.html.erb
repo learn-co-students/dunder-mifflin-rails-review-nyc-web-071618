@@ -1,0 +1,16 @@
+<%= form_for @dog do |f| %>
+<ul>
+<% if @dog.errors.any? %>
+  <% @dog.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  <% end %>
+  </ul>
+ <%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.label :breed %>
+<%= f.text_field :breed %>
+<%= f.label :age %>
+<%= f.text_field :age %>
+<%= f.submit %>
+<% end %>
