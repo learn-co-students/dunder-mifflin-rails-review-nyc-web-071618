@@ -4,8 +4,10 @@ one:
   name: MyString
   breed: MyString
   age: MyString
+  employee: one
 
 two:
   name: MyString
   breed: MyString
   age: MyString
+  employee: two
