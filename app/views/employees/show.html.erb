@@ -1,0 +1,8 @@
+<center>
+  <h1><%= @employee.to_s %></h1></br>
+  <%= image_tag(@employee.img_url)%><br><br>
+  <label><b>Alias: </b><%= @employee.alias %></label><br>
+  <label><b>Title: </b><%= @employee.title %></label><br>
+  <label><b>Office: </b><%= @employee.office %></label><br>
+  <label><b>Dog Name: </b><%= @employee.dog.name %></label>
+</center>
