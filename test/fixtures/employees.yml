@@ -6,6 +6,7 @@ one:
   alias: MyString
   title: MyString
   office: MyString
+  img_url: MyString
   dog: one
 
 two:
@@ -14,4 +15,5 @@ two:
   alias: MyString
   title: MyString
   office: MyString
+  img_url: MyString
   dog: two

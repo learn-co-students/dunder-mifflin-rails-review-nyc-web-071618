@@ -1,0 +1,31 @@
+<%= form_for(@employee) do |f| %>
+
+  <div class="field"> <%= f.label :first_name %><br>
+  <%= f.text_field :first_name %></div>
+
+  <div class="field"><%= f.label :last_name %><br>
+  <%= f.text_field :last_name %></div>
+
+  <div class="field"><%= f.label :alias %><br>
+  <%= f.text_field :alias %></div>
+
+  <div class="field"><%= f.label :title %><br>
+  <%= f.text_field :title %></div>
+
+  <div class="field"><%= f.label :office %><br>
+  <%= f.text_field :office %></div>
+
+  <div class="field"><%= f.label :img_url %><br>
+  <%= f.text_field :img_url %></div>
+
+  <div class="field"><%= f.label :dog_id %><br>
+  <%= f.text_field :dog_id %></div>
+
+
+  </div>
+
+  <br>
+
+  <div class="actions"><%= f.submit 'Submit', :class => 'btn btn-primary' %></div>
+
+<% end %>
